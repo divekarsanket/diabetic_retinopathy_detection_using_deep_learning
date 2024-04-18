@@ -1,0 +1,48 @@
+.details {
+    margin-top: 50px;
+  }
+  
+  .tag {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .details-data {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .details-data h2 {
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .details-data p {
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .details-data img {
+    display: block;
+    margin-top: 20px;
+    max-width: 100%;
+  }
+  .image-grid {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(2, 40%); /* Two columns, each 40% wide */
+    grid-gap: 10px; /* Apply a gap of 10px between grid items */
+}
+.details-data img {
+  float: left; /* Float the image to the left */
+  margin-right: 10px; /* Add margin to the right for spacing */
+  margin-bottom: 10px; /* Add margin at the bottom for spacing */
+}
+
+.details-data::after {
+  content: ""; /* Clear the float */
+  display: table;
+  clear: both;
+}
+
